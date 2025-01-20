@@ -1,0 +1,58 @@
+/* Footer Styles */
+.footer {
+    position: sticky;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footerContent {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footerLinks {
+    margin-top: 10px;
+  }
+  
+  .footerLinks a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+    color: #fff;
+  }
+  
+  /* Ensuring Footer Sticks at the Bottom */
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+  }
+  

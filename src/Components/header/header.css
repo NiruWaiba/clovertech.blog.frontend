@@ -1,0 +1,84 @@
+.header {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 498px;
+    width: 100%;
+  }
+  
+ 
+  .headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .headerTitlesSm {
+    font-size: 30px;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out 1s forwards;
+  }
+  
+  .headerTitlesLg {
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out 1.5s forwards;
+  }
+  
+  .headerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: filter 0.3s ease;
+  }
+  
+  .headerImg:hover {
+    filter: brightness(70%);
+  }
+  
+  /* Animations for titles */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    .headerTitlesSm {
+      font-size: 24px;
+    }
+    .headerTitlesLg {
+      font-size: 60px;
+    }
+  }
+  

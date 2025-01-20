@@ -1,0 +1,247 @@
+/*
+.top{
+    width:100%;
+    height: 55px;
+    background-color:#fcfbfa;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 999;
+
+ }
+
+ .topLeft, .topRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+ .topCenter{
+    flex: 6;
+ }
+ .ppimg{
+    width: 40px;
+    height: 40px;
+    border-radius:  50%;;
+    cursor: pointer;
+    object-fit: cover;
+ }
+ .topIcon{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #444;
+    cursor: pointer;
+ }
+
+ .topList{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+ }
+ .topListItem{
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 530;
+    cursor: pointer;
+ }
+ .topSearchIcon{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+ }
+*/
+
+/* Topbar container */
+.top {
+   width: 100%;
+   height: 55px;
+   background-color: #fcfbfa;
+   position: sticky;
+   top: 0;
+   display: flex;
+   align-items: center;
+   font-family: sans-serif;
+   z-index: 999;
+   border-bottom: 1px solid #f0f0f0;
+}
+
+/* Left and right sections */
+.topLeft, 
+.topRight {
+   flex: 3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* Center section */
+.topCenter {
+   flex: 6;
+   display: flex;
+   justify-content: center;
+}
+
+/* Profile image */
+.ppimg {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   object-fit: cover;
+   margin-right: 15px;
+}
+
+/* Social media icons */
+.topIcon {
+   font-size: 18px;
+   margin-right: 10px;
+   color: #444;
+   cursor: pointer;
+   transition: color 0.3s ease;
+}
+
+.topIcon:hover {
+   color: #666;
+}
+
+/* Navigation list */
+.topList {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+/* Navigation items */
+.topListItem {
+   margin-right: 20px;
+   font-size: 16px;
+   font-weight: 530;
+   cursor: pointer;
+   transition: color 0.3s ease;
+}
+
+.topListItem:last-child {
+   margin-right: 0;
+}
+
+.topListItem:hover {
+   color: #666;
+}
+
+/* Link styling */
+.link {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* Search icon */
+.topSearchIcon {
+   font-size: 18px;
+   color: #666;
+   cursor: pointer;
+   margin-left: 15px;
+   transition: color 0.3s ease;
+}
+
+.topSearchIcon:hover {
+   color: #444;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+   display: none;
+   font-size: 24px;
+   cursor: pointer;
+   color: #444;
+   margin-left: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+   .top {
+       position: relative;
+   }
+
+   .topCenter {
+       position: absolute;
+       top: 55px;
+       left: 0;
+       width: 100%;
+       background-color: #fcfbfa;
+       padding: 10px 0;
+       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+       display: none;
+   }
+
+   .topCenter.active {
+       display: block;
+   }
+
+   .mobile-menu-btn {
+       display: block;
+   }
+
+   .topLeft, 
+   .topRight {
+       flex: 1;
+   }
+
+   .topList {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+   }
+
+   .topCenter .topList .topListItem {
+       margin: 10px 0;
+       padding: 5px 0;
+       width: 100%;
+       text-align: center;
+   }
+
+   /* Keep the login/register buttons visible */
+   .topRight .topList {
+       flex-direction: row;
+       justify-content: flex-end;
+       padding-right: 20px;
+   }
+
+   .topRight .topList .topListItem {
+       margin-right: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .topLeft {
+       padding-left: 10px;
+   }
+
+   .topIcon {
+       margin-right: 8px;
+       font-size: 16px;
+   }
+
+   .ppimg {
+       width: 35px;
+       height: 35px;
+       margin-right: 10px;
+   }
+
+   .topSearchIcon {
+       margin-left: 10px;
+   }
+
+   .topRight .topList .topListItem {
+       font-size: 14px;
+       margin-right: 10px;
+   }
+}

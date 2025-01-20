@@ -1,0 +1,118 @@
+.singlepost{
+    flex: 9;
+    margin-top: 58px;
+    margin-left: 35px;
+    margin-right: 40px;
+    padding: 25px;
+    background-color: #faf6f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.singlePostWrapper{
+    padding: 20px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.singlepostImg{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.singlePostTittle{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size:28px ;
+}
+.singlePostTittleInput{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lora', serif;
+    font-size:28px ;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.singlePostTittleInput:focus{
+    outline: none;
+}
+
+.singlePostIcons{
+    float: right;
+    font-size: 16px;        
+    cursor: pointer;    
+}
+.editIcon{
+    color: teal;
+}
+
+.deleteIcon{
+    color: tomato;
+    margin-left: 10px;
+     
+}
+.singlepostInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #b39656;
+    font-family: 'Varela Round', sans-serif;
+}
+.singlepostDesc{
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+.singlepostDesc::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.singlepostDescInput{
+    border: none;
+    color: #666;
+    font-size: 18px;
+    line-height: 25px;
+}
+.singlepostDescInput:focus{
+    outline: none;
+
+}
+.updateButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    align-self: flex-end; 
+  }
+.singlePostButton{
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+  
+.cancelButton { 
+    width: 100px; 
+    border: none;
+    background-color: #666;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end; 
+    margin-top: 10px; 
+ }
+.updateError {
+    color: red;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
